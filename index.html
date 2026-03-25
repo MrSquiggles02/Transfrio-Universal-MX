@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Transfrio Universal de Monterrey | Refrigeración y A/C para Transporte</title><meta name="description" content="Desde 2005 — Especialistas en mantenimiento, reparación e instalación de sistemas de aire acondicionado para transporte. Distribuidor autorizado Spheros."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+/* Brand palette — from their FB/catalog */
+--teal-700:#1A7A80;--teal-600:#219BA3;--teal-500:#2AABB3;--teal-400:#3DC4CC;--teal-300:#6DD8DF;--teal-200:#A3E8EC;--teal-100:#D5F4F6;--teal-50:#EEF9FA;
+--green-700:#2E6B45;--green-600:#3A8556;--green-500:#4A9D68;--green-400:#5DB87D;
+--teal-glow:rgba(42,171,179,.22);
+/* Neutrals */
+--black:#0B1215;--g950:#101619;--g900:#161C20;--g850:#1C2328;--g800:#252D33;--g700:#384149;--g600:#4F5B65;--g500:#748490;--g400:#94A3AF;--g300:#BCC8D0;--g200:#DDE4E8;--g100:#EEF2F4;--g50:#F7F9FA;--white:#FFF;
+/* Tokens */
+--font:'Barlow',sans-serif;--fd:'Barlow Condensed',sans-serif;--sy:clamp(80px,10vw,140px);--sx:clamp(20px,5vw,40px);--mw:1280px;--ease:cubic-bezier(.16,1,.3,1);--t:.4s;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:var(--font);font-weight:400;color:var(--g400);background:var(--black);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}a{text-decoration:none;color:inherit}
+::selection{background:var(--teal-500);color:var(--white)}
+.w{max-width:var(--mw);margin:0 auto;padding:0 var(--sx)}
+.sec{padding:var(--sy) 0}
+
+/* TYPOGRAPHY */
+.kicker{font-weight:600;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--teal-400);margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.kicker::before{content:'';width:24px;height:1px;background:var(--teal-500)}
+.h1{font-family:var(--fd);font-weight:800;font-size:clamp(44px,7vw,88px);color:var(--white);line-height:.95;letter-spacing:-.02em}
+.h2{font-family:var(--fd);font-weight:700;font-size:clamp(32px,4vw,56px);color:var(--white);line-height:1;letter-spacing:-.01em}
+.h3{font-family:var(--fd);font-weight:700;font-size:clamp(22px,2.5vw,30px);color:var(--white);line-height:1.15}
+.blg{font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:var(--g400)}
+.bsm{font-size:15px;line-height:1.65;color:var(--g500)}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--font);font-weight:600;font-size:15px;border-radius:6px;border:none;cursor:pointer;transition:all var(--t) var(--ease);letter-spacing:.2px}
+.btn-t{padding:16px 36px;background:var(--teal-500);color:var(--white)}
+.btn-t:hover{background:var(--teal-400);transform:translateY(-2px);box-shadow:0 8px 30px var(--teal-glow)}
+.btn-t.nc{color:var(--white);background:var(--teal-700);transition:background var(--t) var(--ease)}
+.btn-t.nc:hover{background:var(--teal-500);transform:none;box-shadow:none}
+.btn-g{padding:16px 36px;background:transparent;color:var(--white);border:1px solid var(--g700)}
+.btn-g:hover{border-color:var(--g400);background:rgba(255,255,255,.03)}
+.btn-sm{padding:14px 24px;font-size:14px}
+.btn svg{width:18px;height:18px;transition:transform var(--t) var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.asvg{fill:currentColor}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.nav.sc{background:rgba(11,18,21,.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 rgba(255,255,255,.05)}
+.nav-i{max-width:var(--mw);margin:0 auto;padding:0 var(--sx);display:flex;align-items:center;justify-content:space-between;height:72px}
+.nav-l{display:flex;align-items:center;gap:14px}
+.nav-lm{width:42px;height:42px;background:linear-gradient(135deg,var(--green-500),var(--teal-500));border-radius:10px;display:flex;align-items:center;justify-content:center;position:relative}
+.nav-lm svg{width:24px;height:24px;fill:var(--white)}
+.nav-lt{font-family:var(--fd);font-weight:700;font-size:18px;color:var(--white);line-height:1.1}
+.nav-lt small{display:block;font-family:var(--font);font-weight:500;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--g500)}
+.nav-m{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-m a{font-weight:500;font-size:14px;color:var(--g400);transition:color var(--t) var(--ease)}
+.nav-m a:hover{color:var(--white)}
+.nc{padding:10px 22px!important;font-size:13px!important;border-radius:6px}
+.nt{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.nt span{display:block;width:22px;height:2px;background:var(--white);margin:5px 0;border-radius:1px;transition:var(--t)}
+.mo{display:none;position:fixed;inset:0;z-index:99;background:var(--black);padding:100px var(--sx) 40px;flex-direction:column}
+.mo.open{display:flex}
+.mo a{display:block;font-family:var(--fd);font-weight:700;font-size:36px;color:var(--white);padding:16px 0;border-bottom:1px solid var(--g850);transition:color var(--t) var(--ease)}
+.mo a:hover{color:var(--teal-400)}
+.mo .mc{margin-top:auto;padding-top:32px}
+.mo .mc p{font-size:14px;color:var(--g500);margin-bottom:6px}
+.mo .mc a{font-family:var(--font);font-size:16px;font-weight:500;color:var(--teal-400);border:none;padding:4px 0}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 80px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,18,21,.2) 0%,rgba(11,18,21,.05) 25%,rgba(11,18,21,.5) 65%,rgba(11,18,21,.97) 100%),linear-gradient(135deg,var(--g950),var(--g900))}
+.hero-bg::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(42,171,179,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(42,171,179,.02) 1px,transparent 1px);background-size:80px 80px}
+.hero-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--g700);font-size:14px;flex-direction:column;gap:12px}
+.hero-ph svg{width:80px;height:80px;opacity:.12}
+.hero-c{position:relative;z-index:2}
+.hero-ey{display:inline-flex;align-items:center;gap:12px;padding:0;background:none;border:none;font-size:12px;font-weight:600;color:var(--teal-400);margin-bottom:28px;letter-spacing:2px;text-transform:uppercase}
+.hero-dot{width:6px;height:6px;background:var(--teal-400);border-radius:50%;animation:blink 2.5s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero .h1{max-width:900px;margin-bottom:28px}
+.hero .h1 .hl{color:var(--teal-400)}
+.hero-d{font-size:clamp(16px,1.3vw,19px);color:var(--g400);max-width:560px;line-height:1.7;margin-bottom:40px}
+.hero-a{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+
+/* Spheros badge */
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:10px 20px;background:rgba(255,255,255,.04);border:1px solid var(--g800);border-radius:8px;font-size:13px;color:var(--g400);font-weight:500}
+.hero-badge strong{color:var(--g300);font-weight:600}
+
+/* STATS */
+.sb{background:var(--g950);border-top:1px solid var(--g850);border-bottom:1px solid var(--g850)}
+.sb-i{display:grid;grid-template-columns:repeat(4,1fr)}
+.st{padding:36px 32px;border-right:1px solid var(--g850);text-align:center}
+.st:last-child{border-right:none}
+.st-n{font-family:var(--fd);font-weight:800;font-size:clamp(32px,3.5vw,48px);color:var(--teal-400);line-height:1;margin-bottom:6px}
+.st-l{font-size:13px;font-weight:500;color:var(--g500);letter-spacing:.5px}
+
+/* SERVICE CARDS */
+.sc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.sc-card{background:var(--g950);overflow:hidden;transition:background var(--t) var(--ease);position:relative}
+.sc-card:first-child{border-radius:16px 0 0 16px}
+.sc-card:last-child{border-radius:0 16px 16px 0}
+.sc-card:hover{background:var(--g900)}
+.sc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal-500),var(--teal-400));transform:scaleX(0);transition:transform var(--t) var(--ease)}
+.sc-card:hover::before{transform:scaleX(1)}
+.sc-img{aspect-ratio:4/3;background:var(--g900);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--g700);font-size:13px;position:relative;overflow:hidden}
+.sc-img::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(11,18,21,.4) 100%)}
+.sc-img svg{width:48px;height:48px;opacity:.2}
+.sc-body{padding:32px 28px}
+.sc-body h3{font-family:var(--fd);font-weight:700;font-size:24px;color:var(--white);margin-bottom:12px}
+.sc-body p{font-size:15px;color:var(--g500);line-height:1.65;margin-bottom:24px}
+.cl{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;color:var(--teal-400);transition:gap var(--t) var(--ease)}
+.cl:hover{gap:12px}
+.cl svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* SERVICE DETAIL */
+.sd{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:var(--sy) 0;border-bottom:1px solid var(--g850)}
+.sd:last-of-type{border-bottom:none}
+.sd.flip{direction:rtl}.sd.flip>*{direction:ltr}
+.sd-img{aspect-ratio:4/3;background:var(--g900);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--g700);font-size:13px;border:1px solid var(--g850)}
+.sd-img svg{width:48px;height:48px;opacity:.2}
+.sd-c .h3{margin-bottom:16px}
+.sd-c .blg{margin-bottom:28px}
+.sl{list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px}
+.sl li{display:flex;align-items:flex-start;gap:14px;font-size:15px;color:var(--g300);line-height:1.5}
+.ck{flex-shrink:0;width:20px;height:20px;margin-top:2px;background:rgba(42,171,179,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.ck svg{width:12px;height:12px;fill:none;stroke:var(--teal-400);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* CATALOG */
+.cat-sec{background:var(--g950)}
+.cat-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cc{background:var(--g900);border:1px solid var(--g850);border-radius:14px;overflow:hidden;transition:all var(--t) var(--ease)}
+.cc:hover{border-color:var(--teal-600);transform:translateY(-4px);box-shadow:0 20px 60px rgba(0,0,0,.4),0 0 0 1px var(--teal-600)}
+.cc-img{aspect-ratio:3/2;background:var(--g850);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:var(--g700);font-size:12px}
+.cc-img svg{width:40px;height:40px;opacity:.2}
+.cc-b{padding:24px}
+.cc-b h3{font-family:var(--fd);font-weight:700;font-size:19px;color:var(--white);margin-bottom:8px}
+.cc-b p{font-size:14px;color:var(--g500);line-height:1.6;margin-bottom:20px}
+.cc .btn{width:100%;justify-content:center}
+
+/* ABOUT */
+.ab-g{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.ab-t .blg{margin-bottom:16px}
+.ab-img{aspect-ratio:4/3;background:var(--g900);border-radius:16px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:var(--g700);font-size:13px;border:1px solid var(--g850)}
+.ab-img svg{width:48px;height:48px;opacity:.2}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px}
+.val{background:var(--g950);padding:48px 36px}
+.val:first-child{border-radius:16px 0 0 16px}
+.val:last-child{border-radius:0 16px 16px 0}
+.vi{display:flex;align-items:center;margin-bottom:14px;opacity:.35}
+.vi svg{width:18px;height:18px;stroke:var(--g300);fill:none;stroke-width:1.5}
+.val h3{font-weight:700;font-size:18px;color:var(--white);margin-bottom:8px}
+.val p{font-size:14px;color:var(--g500);line-height:1.65}
+
+/* CTA BAND */
+.cta{background:var(--g950);border-top:1px solid var(--g850);border-bottom:1px solid var(--g850);padding:64px 0}
+.cta-i{display:flex;align-items:center;justify-content:space-between;gap:48px}
+.cta-c{flex:1;min-width:0}
+.cta .h2{margin-bottom:12px}
+.cta .blg{max-width:480px;margin:0}
+
+/* CONTACT */
+.co-g{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start}
+.ci{display:flex;gap:16px;margin-bottom:28px}
+.ci-i{flex-shrink:0;width:44px;height:44px;background:var(--g900);border:1px solid var(--g800);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.ci-i svg{width:20px;height:20px;stroke:var(--teal-400);fill:none;stroke-width:2}
+.ci h4{font-weight:600;font-size:15px;color:var(--white);margin-bottom:2px}
+.ci p{font-size:14px;color:var(--g500)}
+.ci a{color:var(--g400);transition:color var(--t) var(--ease)}
+.ci a:hover{color:var(--teal-400)}
+.wa{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;background:rgba(37,211,102,.08);border:1px solid #25D366;border-radius:10px;font-weight:600;font-size:15px;color:#25D366;transition:all var(--t) var(--ease);margin-top:8px}
+.wa:hover{background:rgba(37,211,102,.14);transform:translateY(-2px)}
+.wa svg{width:22px;height:22px;fill:#25D366}
+.cfc{background:var(--g950);border:1px solid var(--g850);border-radius:16px;padding:40px}
+.cfc h3{font-family:var(--fd);font-weight:700;font-size:26px;color:var(--white);margin-bottom:28px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fg{margin-bottom:18px}.fg.full{grid-column:1/-1}
+.fg label{display:block;font-weight:600;font-size:13px;color:var(--g300);margin-bottom:7px;letter-spacing:.3px}
+.fg input,.fg select,.fg textarea{width:100%;padding:13px 16px;background:var(--g900);border:1px solid var(--g800);border-radius:8px;font-family:var(--font);font-size:15px;color:var(--white);transition:border-color var(--t) var(--ease),box-shadow var(--t) var(--ease)}
+.fg input::placeholder,.fg textarea::placeholder{color:var(--g600)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--teal-500);box-shadow:0 0 0 3px var(--teal-glow)}
+.fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236B7B87' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:40px}
+.fg select option{background:var(--g900);color:var(--white)}
+.fg textarea{resize:vertical;min-height:110px}
+.fsb{width:100%;padding:16px;justify-content:center;font-size:15px;margin-top:4px}
+.fn{text-align:center;font-size:13px;color:var(--g500);margin-top:14px}
+.fok{display:none;text-align:center;padding:48px 24px}
+.fok.show{display:block}
+.fok-c{width:64px;height:64px;margin:0 auto 20px;background:rgba(42,171,179,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.fok-c svg{width:28px;height:28px;stroke:var(--teal-400);fill:none;stroke-width:2.5}
+.fok h4{font-family:var(--fd);font-weight:700;font-size:24px;color:var(--white);margin-bottom:8px}
+.fok p{color:var(--g500);font-size:15px}
+
+/* PAGE HERO */
+.ph{padding:160px 0 80px;background:var(--black);position:relative}
+.ph::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--g850)}
+.ph .h1{font-size:clamp(40px,6vw,72px)}
+.ph .blg{max-width:540px;margin-top:16px}
+
+/* FOOTER */
+.ft{background:var(--g950);border-top:1px solid var(--g850);padding:64px 0 0}
+.ft-g{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px}
+.ft-bd{font-size:14px;color:var(--g500);line-height:1.65;margin-top:20px;max-width:300px}
+.ft h4{font-family:var(--fd);font-weight:700;font-size:14px;color:var(--g300);letter-spacing:1px;text-transform:uppercase;margin-bottom:20px}
+.fl{list-style:none;display:flex;flex-direction:column;gap:12px}
+.fl a,.fl span{font-size:14px;color:var(--g500);transition:color var(--t) var(--ease)}
+.fl a:hover{color:var(--teal-400)}
+.ft-b{border-top:1px solid var(--g850);padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--g500);flex-wrap:wrap;gap:8px}
+.ft-cr a{color:var(--teal-400);font-weight:600;transition:color var(--t) var(--ease)}
+.ft-cr a:hover{color:var(--teal-300)}
+
+/* SPA */
+.page{display:none}.page.active{display:block}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.vis{opacity:1;transform:translateY(0)}
+.rv1{transition-delay:.08s}.rv2{transition-delay:.16s}.rv3{transition-delay:.24s}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+.sc-grid{grid-template-columns:1fr;gap:12px}.sc-card,.sc-card:first-child,.sc-card:last-child{border-radius:14px}
+.sd{grid-template-columns:1fr;gap:40px}.sd.flip{direction:ltr}
+.cat-g{grid-template-columns:1fr 1fr}.ab-g{grid-template-columns:1fr}.co-g{grid-template-columns:1fr}
+.ft-g{grid-template-columns:1fr 1fr}.vg{grid-template-columns:1fr;gap:12px}.val,.val:first-child,.val:last-child{border-radius:14px}
+.sb-i{grid-template-columns:1fr 1fr}.st{border-bottom:1px solid var(--g850)}
+}
+@media(max-width:768px){
+.nav-m{display:none}.nt{display:block}
+.hero{padding-bottom:40px}.h1{font-size:clamp(36px,10vw,52px)}
+.sb-i{grid-template-columns:1fr 1fr}.st{padding:24px 20px}.st-n{font-size:28px}
+.cat-g{grid-template-columns:1fr}.fr{grid-template-columns:1fr}
+.ft-g{grid-template-columns:1fr;gap:32px}
+.hero-a{flex-direction:column}.hero-a .btn{width:100%;justify-content:center}.cta-i{flex-direction:column;align-items:flex-start;gap:28px}
+.cfc{padding:28px 20px}
+}
+@media(max-width:480px){.sb-i{grid-template-columns:1fr}.st{border-right:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="topNav"><div class="nav-i"><a href="#" class="nav-l" onclick="go('inicio')"><div class="nav-lm">
+<!-- Mountain/triangle logo mark like their actual logo -->
+<svg viewBox="0 0 24 24"><path d="M3 20L12 4l9 16H3z" fill="white" opacity=".9"/><path d="M8 20l4-8 4 8" fill="rgba(0,0,0,.2)"/></svg>
+</div><div class="nav-lt">Transfrio Universal<small>de Monterrey</small></div></a><ul class="nav-m"><li><a href="#" onclick="go('inicio')">Inicio</a></li><li><a href="#" onclick="go('servicios')">Servicios</a></li><li><a href="#" onclick="go('refacciones')">Refacciones</a></li><li><a href="#" onclick="go('nosotros')">Nosotros</a></li><li><a href="#" onclick="go('contacto')" class="btn btn-t nc">Contáctenos</a></li></ul><button class="nt" onclick="toggleNav()" aria-label="Abrir menú" aria-expanded="false" aria-controls="mm"><span></span><span></span><span></span></button></div></nav>
+
+<div class="mo" id="mm" role="dialog" aria-modal="true" aria-label="Menú de navegación"><a href="#" onclick="go('inicio');toggleNav()">Inicio</a><a href="#" onclick="go('servicios');toggleNav()">Servicios</a><a href="#" onclick="go('refacciones');toggleNav()">Refacciones</a><a href="#" onclick="go('nosotros');toggleNav()">Nosotros</a><a href="#" onclick="go('contacto');toggleNav()">Contacto</a><div class="mc"><p>WhatsApp</p><a href="https://wa.me/528123230358" target="_blank">+52 812 323 0358</a></div></div>
+
+<!-- ========== INICIO ========== -->
+<div class="page active" id="page-inicio">
+<section class="hero" aria-label="Inicio"><div class="hero-bg"></div><div class="hero-ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width=".5"><rect x="1" y="5" width="22" height="14" rx="3"/><circle cx="6" cy="19" r="2.5"/><circle cx="18" cy="19" r="2.5"/></svg>[Video/Foto: Flota de autobuses — técnico en sistema A/C]</div>
+<div class="hero-c w">
+<div class="hero-ey rv"><span class="hero-dot"></span>Desde 2005 — Refrigeración y A/C para transporte</div>
+<h1 class="h1 rv rv1">20 años<br>enfriando su<br><span class="hl">flotilla</span></h1>
+<p class="hero-d rv rv2">Servicio preventivo y correctivo, instalación de equipos y venta de refacciones para sistemas de aire acondicionado en autobuses y transporte de pasajeros en Monterrey y el norte de México.</p>
+<div class="hero-a rv rv3">
+<a href="#" onclick="go('contacto')" class="btn btn-t">Solicitar cotización <svg viewBox="0 0 20 20" class="asvg"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg></a>
+<a href="https://wa.me/528123230358" target="_blank" class="btn btn-g"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.504 3.935 1.393 5.607L0 24l6.597-1.369A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.819 0-3.529-.473-5.014-1.302l-.36-.214-3.718.771.796-3.62-.235-.374A9.935 9.935 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>WhatsApp</a>
+</div>
+<div class="hero-badge rv rv3">Distribuidor Autorizado <strong>SPHEROS</strong></div>
+</div></section>
+
+<div class="sb"><div class="sb-i w" style="padding:0"><div class="st rv"><div class="st-n">20+</div><div class="st-l">Años de experiencia</div></div><div class="st rv rv1"><div class="st-n">500+</div><div class="st-l">Unidades atendidas</div></div><div class="st rv rv2"><div class="st-n">50+</div><div class="st-l">Clientes de flotillas</div></div><div class="st rv rv3"><div class="st-n">24h</div><div class="st-l">Respuesta garantizada</div></div></div></div>
+
+<section class="sec" aria-label="Nuestros servicios"><div class="w"><div class="rv" style="margin-bottom:60px"><div class="kicker">Nuestros servicios</div><h2 class="h2">Especialistas en<br>climatización vehicular</h2><p class="blg" style="max-width:560px;margin-top:16px">Cubrimos todas las necesidades de aire acondicionado para su flota — mantenimiento, reparación, instalación y refacciones.</p></div>
+<div class="sc-grid">
+<div class="sc-card rv"><div class="sc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6-7.6 7.6-1.6-1.6a1 1 0 00-1.4 1.4l2.3 2.3a1 1 0 001.4 0l8.3-8.3a1 1 0 000-1.4L14.7 6.3z" stroke-linecap="round"/><path d="M3 21h18" stroke-linecap="round"/></svg>[Foto: Mantenimiento preventivo]</div><div class="sc-body"><h3>Mantenimiento Preventivo</h3><p>Programas de mantenimiento preventivo y correctivo para garantizar el funcionamiento óptimo de los sistemas de A/C de su flotilla.</p><a href="#" onclick="go('servicios')" class="cl" aria-label="Más información sobre Mantenimiento Preventivo">Más información <svg viewBox="0 0 16 16"><path d="M6.5 3.5l4 4.5-4 4.5"/></svg></a></div></div>
+<div class="sc-card rv rv1"><div class="sc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>[Foto: Reparación AC]</div><div class="sc-body"><h3>Reparación AC</h3><p>Diagnóstico y reparación de fallas en compresores, condensadores, evaporadores y todo el sistema de climatización vehicular.</p><a href="#" onclick="go('servicios')" class="cl" aria-label="Más información sobre Reparación AC">Más información <svg viewBox="0 0 16 16"><path d="M6.5 3.5l4 4.5-4 4.5"/></svg></a></div></div>
+<div class="sc-card rv rv2"><div class="sc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round" stroke-linejoin="round"/></svg>[Foto: Instalación de equipo nuevo]</div><div class="sc-body"><h3>Instalación de Equipos</h3><p>Instalación completa de sistemas de A/C nuevos, adaptados a cada unidad, modelo y condiciones de ruta operativa.</p><a href="#" onclick="go('servicios')" class="cl" aria-label="Más información sobre Instalación de Equipos">Más información <svg viewBox="0 0 16 16"><path d="M6.5 3.5l4 4.5-4 4.5"/></svg></a></div></div>
+</div></div></section>
+
+<section class="cta"><div class="w"><div class="cta-i rv"><div class="cta-c"><h2 class="h2">¿Su flota necesita servicio?</h2><p class="blg">Evaluación y cotización sin compromiso.</p></div><a href="#" onclick="go('contacto')" class="btn btn-t">Solicitar cotización <svg viewBox="0 0 20 20" class="asvg"><path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg></a></div></div></section>
+</div>
+
+<!-- ========== SERVICIOS ========== -->
+<div class="page" id="page-servicios">
+<div class="ph"><div class="w"><div class="kicker rv">Servicios</div><h1 class="h1 rv rv1">Nuestros<br>Servicios</h1><p class="blg rv rv2">Soluciones especializadas en climatización para autobuses, camiones y transporte de pasajeros.</p></div></div>
+<div class="w">
+<div class="sd rv"><div class="sd-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6-7.6 7.6-1.6-1.6a1 1 0 00-1.4 1.4l2.3 2.3a1 1 0 001.4 0l8.3-8.3a1 1 0 000-1.4L14.7 6.3z"/></svg>[Foto: Mantenimiento]</div><div class="sd-c"><div class="kicker">Servicio 01</div><h3 class="h3">Mantenimiento Preventivo y Correctivo</h3><p class="blg">Programas diseñados para maximizar la vida útil de los sistemas de A/C y prevenir fallas costosas.</p><ul class="sl"><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Inspección completa del sistema de refrigeración</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Revisión y recarga de gas refrigerante</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Limpieza de filtros, evaporadores y condensadores</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Verificación de compresores y sistema eléctrico</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Detección de fugas con equipo especializado</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Reportes detallados del estado de cada unidad</li></ul><a href="#" onclick="go('contacto')" class="btn btn-t btn-sm">Cotizar mantenimiento</a></div></div>
+<div class="sd flip rv"><div class="sd-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83"/></svg>[Foto: Reparación]</div><div class="sd-c"><div class="kicker">Servicio 02</div><h3 class="h3">Reparación de Sistemas A/C</h3><p class="blg">Diagnóstico y reparación de cualquier falla, minimizando tiempo fuera de servicio de sus unidades.</p><ul class="sl"><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Diagnóstico computarizado de fallas</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Reparación y reemplazo de compresores</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Soldadura y reparación de líneas de refrigeración</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Cambio de condensadores y evaporadores</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Servicio de emergencia para unidades en ruta</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Garantía en todas las reparaciones</li></ul><a href="#" onclick="go('contacto')" class="btn btn-t btn-sm">Solicitar reparación</a></div></div>
+<div class="sd rv"><div class="sd-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>[Foto: Instalación nueva]</div><div class="sd-c"><div class="kicker">Servicio 03</div><h3 class="h3">Instalación de Equipos AC</h3><p class="blg">Instalación completa de sistemas de aire acondicionado para unidades nuevas o actualizaciones tecnológicas.</p><ul class="sl"><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Evaluación técnica de la unidad y ruta</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Selección del equipo según capacidad requerida</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Instalación con estándares de fábrica</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Pruebas de rendimiento y temperatura</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Capacitación para operadores</li><li><span class="ck"><svg viewBox="0 0 12 12"><path d="M2 6l3 3 5-5"/></svg></span>Plan de mantenimiento post-instalación</li></ul><a href="#" onclick="go('contacto')" class="btn btn-t btn-sm">Cotizar instalación</a></div></div>
+</div>
+<section class="cta"><div class="w"><div class="cta-i rv"><div class="cta-c"><h2 class="h2">¿Necesita un servicio específico?</h2><p class="blg">Diseñamos un plan a la medida de cada flotilla.</p></div><a href="#" onclick="go('contacto')" class="btn btn-t">Hablemos de su proyecto</a></div></div></section>
+</div>
+
+<!-- ========== REFACCIONES ========== -->
+<div class="page" id="page-refacciones">
+<div class="ph"><div class="w"><div class="kicker rv">Catálogo</div><h1 class="h1 rv rv1">Refacciones<br>y Equipo</h1><p class="blg rv rv2">Amplio inventario de refacciones originales y de alta calidad. Distribuidor autorizado Spheros.</p></div></div>
+<section class="sec cat-sec" aria-label="Catálogo de refacciones"><div class="w"><p class="blg rv" style="max-width:600px;margin:0 0 50px">Inventario disponible de las principales marcas y modelos. Consulte disponibilidad y precios directamente con nuestro equipo.</p><div class="cat-g">
+<div class="cc rv"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 3"/></svg>[Foto: Compresores]</div><div class="cc-b"><h3>Compresores</h3><p>Nuevos y remanufacturados para las principales marcas de A/C vehicular.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Compresores">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv1"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>[Foto: Condensadores]</div><div class="cc-b"><h3>Condensadores</h3><p>Alto rendimiento para las condiciones extremas del norte de México.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Condensadores">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv2"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M4 4h16v16H4z"/><path d="M4 12h16M12 4v16"/></svg>[Foto: Evaporadores]</div><div class="cc-b"><h3>Evaporadores</h3><p>De techo y bajo piso para autobuses urbanos y foráneos.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Evaporadores">Consultar disponibilidad</a></div></div>
+<div class="cc rv"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>[Foto: Mangueras]</div><div class="cc-b"><h3>Mangueras y Líneas</h3><p>Alta y baja presión, líneas de refrigeración y conexiones.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Mangueras y Líneas">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv1"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M3 4h18v4H3zM3 12h18v4H3zM3 20h18"/></svg>[Foto: Filtros]</div><div class="cc-b"><h3>Filtros y Secadores</h3><p>Filtros deshidratadores, de cabina y componentes de filtración.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Filtros y Secadores">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv2"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>[Foto: Eléctricos]</div><div class="cc-b"><h3>Componentes Eléctricos</h3><p>Termostatos, relés, embragues, ventiladores, sensores y controles.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Componentes Eléctricos">Consultar disponibilidad</a></div></div>
+<div class="cc rv"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>[Foto: Válvulas]</div><div class="cc-b"><h3>Válvulas de Expansión</h3><p>Termostáticas y electrónicas para los principales sistemas.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Válvulas de Expansión">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv1"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M20 7h-4V3M4 17h4v4M17 4l3 3-3 3M7 20l-3-3 3-3"/></svg>[Foto: Gas]</div><div class="cc-b"><h3>Gas Refrigerante</h3><p>R-134a, R-404A y formulaciones especializadas.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Gas Refrigerante">Consultar disponibilidad</a></div></div>
+<div class="cc rv rv2"><div class="cc-img"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6-7.6 7.6-1.6-1.6a1 1 0 00-1.4 1.4l2.3 2.3a1 1 0 001.4 0l8.3-8.3a1 1 0 000-1.4L14.7 6.3z"/></svg>[Foto: Herramientas]</div><div class="cc-b"><h3>Herramientas y Accesorios</h3><p>Aceites, O-rings, sellos, abrazaderas y herramienta especializada.</p><a href="#" onclick="go('contacto')" class="btn btn-g btn-sm" aria-label="Consultar disponibilidad de Herramientas y Accesorios">Consultar disponibilidad</a></div></div>
+</div></div></section>
+<section class="cta"><div class="w"><div class="cta-i rv"><div class="cta-c"><h2 class="h2">¿No encuentra lo que busca?</h2><p class="blg">Cotizamos cualquier pieza o equipo bajo pedido.</p></div><a href="#" onclick="go('contacto')" class="btn btn-t">Cotizar refacciones</a></div></div></section>
+</div>
+
+<!-- ========== NOSOTROS ========== -->
+<div class="page" id="page-nosotros">
+<div class="ph"><div class="w"><div class="kicker rv">Empresa</div><h1 class="h1 rv rv1">Nosotros</h1><p class="blg rv rv2">La historia y el equipo detrás de Transfrio Universal de Monterrey S.A. de C.V.</p></div></div>
+<section class="sec"><div class="w"><div class="ab-g"><div class="ab-t rv"><div class="kicker">Nuestra Historia</div><h2 class="h2" style="margin-bottom:24px">Desde 2005,<br>enfriando el camino</h2><p class="blg">Transfrio Universal de Monterrey nació de la pasión por la ingeniería de climatización y la necesidad de ofrecer un servicio verdaderamente especializado para el sector de transporte de pasajeros en el norte de México.</p><p class="blg">Con más de 20 años de trayectoria, nos hemos consolidado como referentes en sistemas de aire acondicionado para autobuses y transporte, siendo distribuidores autorizados de Spheros, una de las marcas líderes a nivel mundial en climatización vehicular.</p><p class="blg">Desde nuestras instalaciones en Ciénega de Flores, Nuevo León, atendemos a las principales empresas de transporte de la región con un equipo comprometido con la excelencia y la satisfacción del cliente.</p></div><div class="ab-img rv rv1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="width:48px;height:48px;opacity:.2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2M5 21H3"/></svg>[Foto: Instalaciones de Transfrio Universal]</div></div></div></section>
+<section class="sec" style="background:var(--black)"><div class="w"><div class="rv"><div class="kicker">Nuestros Valores</div><h2 class="h2">Lo que nos define</h2></div><div class="vg"><div class="val rv"><div class="vi"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Calidad</h3><p>Refacciones originales, equipo Spheros y estándares estrictos en cada servicio.</p></div><div class="val rv rv1"><div class="vi"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Puntualidad</h3><p>Cada minuto cuenta en la operación de su flotilla. Respetamos tiempos de entrega.</p></div><div class="val rv rv2"><div class="vi"><svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Compromiso</h3><p>Más de 20 años construyendo relaciones a largo plazo con nuestros clientes.</p></div></div></div></section>
+</div>
+
+<!-- ========== CONTACTO ========== -->
+<div class="page" id="page-contacto">
+<div class="ph"><div class="w"><div class="kicker rv">Contacto</div><h1 class="h1 rv rv1">Hablemos</h1><p class="blg rv rv2">Estamos listos para atender las necesidades de climatización de su flotilla.</p></div></div>
+<section class="sec"><div class="w"><div class="co-g"><div>
+<div class="rv"><div class="kicker">Información de contacto</div><h3 class="h3" style="margin-bottom:8px">Respuesta en 24 horas</h3><p class="bsm" style="margin-bottom:32px">Comuníquese por cualquiera de estos medios.</p></div>
+<div class="ci rv"><div class="ci-i"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><div><h4>Ubicación</h4><p>Ojo de Agua 1050, Centro<br>Ciénega de Flores, Nuevo León, México</p></div></div>
+<div class="ci rv"><div class="ci-i"><svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div><div><h4>Teléfono</h4><p><a href="tel:+528123230358">+52 812 323 0358</a></p></div></div>
+<div class="ci rv"><div class="ci-i"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div><div><h4>Correo electrónico</h4><p><a href="mailto:edelangel@transfriouniversal.com.mx">edelangel@transfriouniversal.com.mx</a></p></div></div>
+<div class="ci rv"><div class="ci-i"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><h4>Horario</h4><p>Lunes a Viernes: 8:00 AM – 6:00 PM<br>Sábado: 8:00 AM – 2:00 PM</p></div></div>
+<a href="https://wa.me/528123230358" target="_blank" class="wa rv"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.025.504 3.935 1.393 5.607L0 24l6.597-1.369A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.819 0-3.529-.473-5.014-1.302l-.36-.214-3.718.771.796-3.62-.235-.374A9.935 9.935 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>Enviar mensaje por WhatsApp</a>
+</div>
+<div class="cfc rv" id="cfc"><h3>Solicite una cotización</h3><form id="theForm" onsubmit="submitForm(event)"><div class="fr"><div class="fg"><label for="nombre">Nombre completo *</label><input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez"></div><div class="fg"><label for="empresa">Empresa *</label><input type="text" id="empresa" name="empresa" required placeholder="Nombre de su empresa"></div></div><div class="fr"><div class="fg"><label for="telefono">Teléfono *</label><input type="tel" id="telefono" name="telefono" required placeholder="+52 81 XXXX XXXX"></div><div class="fg"><label for="email">Correo electrónico *</label><input type="email" id="email" name="email" required placeholder="correo@empresa.com"></div></div><div class="fg"><label for="servicio">Tipo de servicio *</label><select id="servicio" name="servicio" required><option value="" disabled selected>Seleccione una opción</option><option value="mantenimiento">Mantenimiento preventivo/correctivo</option><option value="reparacion">Reparación de sistema A/C</option><option value="instalacion">Instalación de equipo nuevo</option><option value="refacciones">Cotización de refacciones</option><option value="otro">Otro</option></select></div><div class="fg"><label for="flotilla">Tamaño de flotilla</label><select id="flotilla" name="flotilla"><option value="" disabled selected>Seleccione</option><option value="1-10">1 – 10 unidades</option><option value="11-50">11 – 50 unidades</option><option value="51-100">51 – 100 unidades</option><option value="100+">Más de 100 unidades</option></select></div><div class="fg"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Describa brevemente sus necesidades..."></textarea></div><button type="submit" class="btn btn-t fsb">Enviar solicitud <svg viewBox="0 0 20 20" class="asvg"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg></button><p class="fn">* Campos obligatorios. Responderemos en 24 horas hábiles.</p></form><div class="fok" id="formOk"><div class="fok-c"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>¡Mensaje enviado!</h4><p>Gracias por contactarnos. Nos comunicaremos con usted a la brevedad.</p></div></div>
+</div></div></section>
+</div>
+
+<!-- FOOTER -->
+<footer class="ft"><div class="w"><div class="ft-g"><div><div class="nav-l" style="margin-bottom:0"><div class="nav-lm"><svg viewBox="0 0 24 24"><path d="M3 20L12 4l9 16H3z" fill="white" opacity=".9"/><path d="M8 20l4-8 4 8" fill="rgba(0,0,0,.2)"/></svg></div><div class="nav-lt">Transfrio Universal<small>de Monterrey</small></div></div><p class="ft-bd">Refrigeración y aire acondicionado para autobuses y transporte. Distribuidor autorizado Spheros. Desde 2005.</p></div><div><h4>Navegación</h4><ul class="fl"><li><a href="#" onclick="go('inicio')">Inicio</a></li><li><a href="#" onclick="go('servicios')">Servicios</a></li><li><a href="#" onclick="go('refacciones')">Refacciones</a></li><li><a href="#" onclick="go('nosotros')">Nosotros</a></li><li><a href="#" onclick="go('contacto')">Contacto</a></li></ul></div><div><h4>Servicios</h4><ul class="fl"><li><a href="#" onclick="go('servicios')">Mantenimiento</a></li><li><a href="#" onclick="go('servicios')">Reparaciones</a></li><li><a href="#" onclick="go('servicios')">Instalaciones</a></li><li><a href="#" onclick="go('refacciones')">Refacciones</a></li></ul></div><div><h4>Contacto</h4><ul class="fl"><li><span>Ciénega de Flores, NL</span></li><li><a href="tel:+528123230358">+52 812 323 0358</a></li><li><a href="mailto:edelangel@transfriouniversal.com.mx">edelangel@transfriouniversal.com.mx</a></li><li><span>Lun–Vie 8AM – 6PM</span></li></ul></div></div><div class="ft-b"><span>&copy; 2026 Transfrio Universal de Monterrey S.A. de C.V. Todos los derechos reservados.</span><span class="ft-cr">Sitio web por <a href="https://nodelync.cloud" target="_blank" rel="noopener">Nodelync</a></span></div></div></footer>
+
+<script>
+// SPA navigation with focus management
+function go(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  const t=document.getElementById('page-'+id);
+  if(!t)return;
+  t.classList.add('active');
+  window.scrollTo({top:0,behavior:'instant'});
+  setTimeout(()=>{
+    const h=t.querySelector('h1,h2');
+    if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true});}
+    runReveal();
+  },50);
+}
+
+// Mobile nav: aria-expanded, focus management, focus trap, Escape key
+function toggleNav(){
+  const mm=document.getElementById('mm');
+  const btn=document.querySelector('.nt');
+  const open=mm.classList.toggle('open');
+  btn.setAttribute('aria-expanded',String(open));
+  btn.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+  if(open){
+    const first=mm.querySelector('a,button');
+    if(first)first.focus();
+    document.addEventListener('keydown',trapNav);
+  }else{
+    document.removeEventListener('keydown',trapNav);
+    btn.focus();
+  }
+}
+function trapNav(e){
+  if(e.key==='Escape'){toggleNav();return;}
+  if(e.key!=='Tab')return;
+  const mm=document.getElementById('mm');
+  const focusable=Array.from(mm.querySelectorAll('a,button'));
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey){if(document.activeElement===first){e.preventDefault();last.focus();}}
+  else{if(document.activeElement===last){e.preventDefault();first.focus();}}
+}
+
+// Scroll handler with rAF throttle
+let scrollRaf=false;
+window.addEventListener('scroll',()=>{
+  if(scrollRaf)return;
+  scrollRaf=true;
+  requestAnimationFrame(()=>{
+    document.getElementById('topNav').classList.toggle('sc',window.scrollY>30);
+    scrollRaf=false;
+  });
+});
+
+// IntersectionObserver with cleanup to prevent accumulation
+let revealObs=null;
+function runReveal(){
+  if(revealObs)revealObs.disconnect();
+  revealObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>{el.classList.remove('vis');revealObs.observe(el);});
+}
+
+function submitForm(e){e.preventDefault();document.getElementById('theForm').style.display='none';document.getElementById('formOk').classList.add('show');}
+document.addEventListener('DOMContentLoaded',runReveal);
+</script>
+</body></html>
